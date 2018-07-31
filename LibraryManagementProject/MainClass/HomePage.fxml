@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+    <children>
+        <BorderPane>
+         <center>
+                <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <FlowPane alignment="CENTER_RIGHT" columnHalignment="CENTER" prefHeight="64.0" prefWidth="1353.0" style="-fx-background-color: #00CCCC;" HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <Label fx:id="dateTimeLabel" alignment="CENTER" prefHeight="41.0" prefWidth="222.0" style="-fx-border-color: grey;" textFill="#fffafa" />
+                                        <JFXButton text="Setting" textFill="WHITE">
+                                            <graphic>
+                                                <MaterialDesignIconView fill="WHITE" glyphName="SETTINGS" size="25" />
+                                            </graphic>
+                                        </JFXButton>
+                                        <JFXButton contentDisplay="GRAPHIC_ONLY" prefHeight="39.0" prefWidth="38.0">
+                                            <graphic>
+                                                <FontAwesomeIconView fill="#fffff7" glyphName="FLAG_ALT" size="25" text="" />
+                                            </graphic>
+                                        </JFXButton>
+                                        <Label alignment="CENTER" prefHeight="11.0" prefWidth="17.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="0" textFill="WHITE" />
+                                        <JFXButton contentDisplay="GRAPHIC_ONLY" prefHeight="39.0" prefWidth="38.0" text="Button">
+                                            <graphic>
+                                                <MaterialIconView fill="WHITE" glyphName="NOTIFICATIONS_NONE" size="25" />
+                                            </graphic>
+                                        </JFXButton>
+                                        <Label alignment="CENTER" prefHeight="11.0" prefWidth="17.0" style="-fx-background-color: yellow; -fx-background-radius: 20;" text="0" textFill="#573434" />
+                                        <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#logOutUser" prefHeight="39.0" prefWidth="175.0" style="-fx-border-color: #C5F3FA;" text="Log Out" textAlignment="CENTER" textFill="#c5f3fa" underline="true">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                            <FlowPane.margin>
+                                                <Insets left="20.0" />
+                                            </FlowPane.margin>
+                                        </JFXButton>
+                                        <JFXButton contentDisplay="GRAPHIC_ONLY" prefHeight="39.0" prefWidth="38.0" text="Button" />
+                                    </children>
+                                </FlowPane>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="348.0" prefWidth="1353.0" style="-fx-background-color: #2d75e8;" HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <ImageView blendMode="ADD" fitHeight="213.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                                            <image>
+                                                <Image url="@../Image/LibraryHomeIcon.png" />
+                                            </image>
+                                            <cursor>
+                                                <Cursor fx:constant="NONE" />
+                                            </cursor>
+                                            <effect>
+                                                <InnerShadow />
+                                            </effect>
+                                        </ImageView>
+                                        <Label alignment="CENTER" prefHeight="135.0" prefWidth="561.0" style="-fx-text-fill: white;" text="Kathmandu Public Library">
+                                            <font>
+                                                <Font name="Lucida Sans Typewriter Regular" size="30.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </FlowPane>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="614.0" prefWidth="1353.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <VBox prefHeight="519.0" prefWidth="1353.0" HBox.hgrow="ALWAYS">
+                                    <children>
+                                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0" spacing="175.0" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <FlowPane alignment="CENTER" orientation="VERTICAL" HBox.hgrow="ALWAYS">
+                                                    <children>
+                                                        <JFXButton fx:id="homeButton" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#issueBookWindow" prefHeight="176.0" prefWidth="288.0" style="-fx-background-color: #EFEFEF;" text="Home" textFill="#2d75e8">
+                                                            <font>
+                                                                <Font name="Segoe UI Semibold" size="30.0" />
+                                                            </font>
+                                                            <FlowPane.margin>
+                                                                <Insets left="100.0" />
+                                                            </FlowPane.margin>
+                                                            <graphic>
+                                                                <ImageView fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../Image/HomePagButtonIcon/HomePage.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </graphic>
+                                                        </JFXButton>
+                                                        <JFXButton fx:id="addBooksButton" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#loadNewBookAdderWindow" prefHeight="170.0" prefWidth="288.0" style="-fx-background-color: #EFEFEF;" text="Add Books" textFill="#2d75e8">
+                                                            <FlowPane.margin>
+                                                                <Insets left="100.0" />
+                                                            </FlowPane.margin>
+                                                            <graphic>
+                                                                <ImageView fitHeight="100.0" fitWidth="80.0" opacity="0.92" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../Image/HomePagButtonIcon/AddBooks.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </graphic>
+                                                            <font>
+                                                                <Font name="Segoe UI Semibold" size="30.0" />
+                                                            </font>
+                                                        </JFXButton>
+                                                        <JFXButton fx:id="addMemberButton" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#loadNewMemberAdderWindow" prefHeight="170.0" prefWidth="288.0" style="-fx-background-color: #EFEFEF;" text="Add Member" textFill="#2d75e8">
+                                                            <font>
+                                                                <Font name="Segoe UI Semibold" size="30.0" />
+                                                            </font>
+                                                            <FlowPane.margin>
+                                                                <Insets left="100.0" />
+                                                            </FlowPane.margin>
+                                                            <graphic>
+                                                                <ImageView fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <Image url="@../Image/HomePagButtonIcon/addMembers.png" />
+                                                                </ImageView>
+                                                            </graphic>
+                                                        </JFXButton>
+                                                    </children>
+                                                </FlowPane>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" left="20.0" right="40.0" top="20.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0" spacing="170.0" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <FlowPane alignment="CENTER" orientation="VERTICAL" HBox.hgrow="ALWAYS">
+                                                    <children>
+                                                        <JFXButton fx:id="listMemberButton" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#listNewMemberWindow" prefHeight="170.0" prefWidth="288.0" style="-fx-background-color: #EFEFEF;" text="List Member" textAlignment="CENTER" textFill="#2d75e8">
+                                                            <FlowPane.margin>
+                                                                <Insets left="100.0" />
+                                                            </FlowPane.margin>
+                                                            <font>
+                                                                <Font name="Segoe UI Semibold" size="30.0" />
+                                                            </font>
+                                                            <graphic>
+                                                                <ImageView fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../Image/HomePagButtonIcon/listMember.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </graphic>
+                                                        </JFXButton>
+                                                        <JFXButton fx:id="listBooksButton" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#listNewBookWindow" prefHeight="170.0" prefWidth="288.0" style="-fx-background-color: #EFEFEF;" text="List Books" textAlignment="CENTER" textFill="#2d75e8">
+                                                            <FlowPane.margin>
+                                                                <Insets left="100.0" />
+                                                            </FlowPane.margin>
+                                                            <font>
+                                                                <Font name="Segoe UI Semibold" size="30.0" />
+                                                            </font>
+                                                            <graphic>
+                                                                <ImageView fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../Image/HomePagButtonIcon/ListBooks.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </graphic>
+                                                        </JFXButton>
+                                                        <JFXButton fx:id="settingButton" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" prefHeight="170.0" prefWidth="288.0" style="-fx-background-color: #EFEFEF;" text="Issued Book List" textAlignment="CENTER" textFill="#2d75e8">
+                                                            <FlowPane.margin>
+                                                                <Insets left="100.0" />
+                                                            </FlowPane.margin>
+                                                            <font>
+                                                                <Font name="Segoe UI Semibold" size="30.0" />
+                                                            </font>
+                                                            <graphic>
+                                                                <ImageView fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../Image/Issued_Book.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </graphic>
+                                                        </JFXButton>
+                                                    </children>
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </FlowPane>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" left="20.0" right="40.0" top="20.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets bottom="40.0" />
+                                    </HBox.margin>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+         </center>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+        </BorderPane>
+    </children>
+</StackPane>

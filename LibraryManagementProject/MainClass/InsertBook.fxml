@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0"
+            prefWidth="389.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controller.BookController">
+    <children>
+        <JFXTextField alignment="CENTER" fx:id="idTextField" labelFloat="true" layoutX="37.0" layoutY="98.0"
+                      prefHeight="31.0" prefWidth="301.0" promptText="Id">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </JFXTextField>
+        <JFXTextField alignment="CENTER" fx:id="publisherTextField" labelFloat="true" layoutX="37.0" layoutY="289.0"
+                      prefHeight="31.0" prefWidth="301.0" promptText="Publisher">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </JFXTextField>
+        <JFXTextField alignment="CENTER" fx:id="authorTextField" labelFloat="true" layoutX="37.0" layoutY="225.0"
+                      prefHeight="31.0" prefWidth="301.0" promptText="Book Author">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </JFXTextField>
+        <JFXTextField alignment="CENTER" fx:id="titleTextField" labelFloat="true" layoutX="37.0" layoutY="160.0"
+                      prefHeight="31.0" prefWidth="301.0" promptText="Title">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </JFXTextField>
+        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="361.0"
+                   onAction="#addBookToDatabase" prefHeight="31.0" prefWidth="151.0" style="-fx-border-color: #00CCCC;"
+                   text="Button">
+            <graphic>
+                <Icons525View fill="#29652f" glyphName="OK" size="20" text=" Save" wrappingWidth="88.0"/>
+            </graphic>
+        </JFXButton>
+        <JFXButton onAction="#cancelButton" contentDisplay="GRAPHIC_ONLY" layoutX="217.0" layoutY="361.0"
+                   prefHeight="31.0" prefWidth="151.0"
+                   style="-fx-border-color: red;">
+            <graphic>
+                <Icons525View fill="#d31818" glyphName="CANCEL" size="20" text=" Cancel" wrappingWidth="97.1171875"/>
+            </graphic>
+        </JFXButton>
+        <Label alignment="CENTER" layoutX="37.0" layoutY="38.0" prefHeight="37.0" prefWidth="301.0"
+               text="Enter a new book here" textFill="#176ec4" underline="true">
+            <font>
+                <Font name="Century" size="28.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="681.0"
+            prefWidth="925.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controller.LoginController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="453.0" style="-fx-background-color: #00CCCC;">
+            <children>
+                <ImageView fitHeight="681.0" fitWidth="453.0" layoutX="-1.0" opacity="0.71" pickOnBounds="true">
+                    <image>
+                        <Image url="Image/bookslogin.jpg"/>
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="42.0" layoutY="600.0" prefHeight="60.0" prefWidth="367.0"
+                       style="-fx-text-fill: #F1ECF4;"
+                       text="A library is not a luxury but one of the necessities of liferead." wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="19.0" layoutY="14.0" prefHeight="60.0" prefWidth="413.0"
+                       style="-fx-text-fill: rgb(250, 250, 250);"
+                       text=" Library reflects the diversity and character, and the needs and expectations of our community."
+                       underline="true" wrapText="true">
+                    <font>
+                        <Font name="Sitka Text" size="16.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="19.0" layoutY="74.0" prefHeight="60.0" prefWidth="402.0"
+                       style="-fx-text-fill: rgb(250, 246, 250);"
+                       text="Our library is a unique and valuable resource.  It is a lifeline to the world and all the information in it."
+                       underline="true" wrapText="true">
+                    <font>
+                        <Font name="Sitka Text" size="16.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="453.0" prefHeight="135.0" prefWidth="471.0"
+                    style="-fx-background-color: #ffffff; -fx-border-color: black;">
+            <children>
+                <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="59.0" prefHeight="79.0"
+                       prefWidth="95.0">
+                    <graphic>
+                        <MaterialDesignIconView fill="#cdcdcd" glyphName="ACCOUNT_CIRCLE" size="79" text=""
+                                                textAlignment="CENTER" wrappingWidth="80.0"/>
+                    </graphic>
+                </Label>
+                <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY"
+                           layoutX="100.0" layoutY="68.0" prefHeight="60.0" prefWidth="353.0"
+                           style="-fx-border-color: black;">
+                    <graphic>
+                        <Icons525View fill="#575e51" glyphName="USER" size="24" text=" Login"
+                                      wrappingWidth="110.0625"/>
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </JFXButton>
+                <Label alignment="CENTER" prefHeight="60.0" prefWidth="471.0"
+                       style="-fx-background-color: #00cccc; -fx-text-fill: white;" text="The Book Lounge"
+                       textOverrun="WORD_ELLIPSIS" underline="true">
+                    <font>
+                        <Font name="Rockwell Nova" size="24.0"/>
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="CLOSED_HAND"/>
+                    </cursor>
+                    <effect>
+                        <InnerShadow/>
+                    </effect>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="453.0" layoutY="563.0" prefHeight="118.0" prefWidth="471.0"
+                    style="-fx-background-color: white; -fx-border-color: blue;">
+            <children>
+                <Separator layoutX="39.0" layoutY="9.0" opacity="0.58" prefHeight="7.0" prefWidth="413.0"
+                           style="-fx-border-color: rgb(122,122,122);"/>
+                <Label layoutX="66.0" layoutY="32.0" prefHeight="22.0" prefWidth="339.0" style="-fx-text-fill: #103F6D;"
+                       text="Want to get connected in social media ? " textFill="#bf2489" underline="true">
+                    <font>
+                        <Font name="Yu Gothic Light" size="19.0"/>
+                    </font>
+                </Label>
+                <JFXButton fx:id="twitterButton" contentDisplay="GRAPHIC_ONLY" layoutX="373.0" layoutY="64.0"
+                           onAction="#goToTwitter" prefHeight="43.0" prefWidth="6.0">
+                    <graphic>
+                        <FontAwesomeIconView fill="#77d1ec" glyphName="TWITTER_SQUARE" size="30.0"/>
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </JFXButton>
+                <JFXButton fx:id="facebookButton" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="327.0"
+                           layoutY="63.0" onAction="#goToFacebook" prefHeight="43.0" prefWidth="35.0">
+                    <graphic>
+                        <FontAwesomeIconView fill="#4267b2" glyphName="FACEBOOK_SQUARE" size="30.0"/>
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </JFXButton>
+                <JFXButton fx:id="googlePlusButton" contentDisplay="GRAPHIC_ONLY" layoutX="419.0" layoutY="63.0"
+                           onAction="#goToGooglePlus" prefHeight="43.0" prefWidth="46.0">
+                    <graphic>
+                        <FontAwesomeIconView fill="#f85e4a" glyphName="GOOGLE_PLUS_SQUARE" size="30.0"/>
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+        <VBox layoutX="453.0" layoutY="135.0" prefHeight="413.0" prefWidth="471.0" spacing="10.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="75.0" prefWidth="471.0" style="-fx-text-fill: #1769aa;"
+                       text="Please login with your details" textAlignment="CENTER" underline="true">
+                    <font>
+                        <Font name="Times New Roman" size="34.0"/>
+                    </font>
+                    <effect>
+                        <Bloom threshold="0.36"/>
+                    </effect>
+                    <VBox.margin>
+                        <Insets top="20.0"/>
+                    </VBox.margin>
+                </Label>
+                <JFXTextField fx:id="loginUserName" alignment="CENTER" labelFloat="true" prefHeight="7.0"
+                              prefWidth="245.0" promptText="Username">
+                    <font>
+                        <Font name="Lucida Sans Typewriter Regular" size="17.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets top="30.0"/>
+                    </VBox.margin>
+                </JFXTextField>
+                <JFXPasswordField fx:id="loginPassword" alignment="CENTER" labelFloat="true" prefHeight="31.0"
+                                  prefWidth="245.0" promptText="Password">
+                    <font>
+                        <Font name="Symbol" size="17.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets top="30.0"/>
+                    </VBox.margin>
+                </JFXPasswordField>
+                <Label contentDisplay="GRAPHIC_ONLY" text="Label"/>
+                <HBox prefHeight="88.0" prefWidth="471.0">
+                    <children>
+                        <JFXButton onAction="#loginToLibrary" alignment="CENTER" buttonType="RAISED"
+                                   contentDisplay="GRAPHIC_ONLY" defaultButton="true" prefHeight="50.0"
+                                   prefWidth="100.0" ripplerFill="#d02121" textAlignment="CENTER">
+                            <graphic>
+                                <FontAwesomeIconView fill="#00cccc" glyphName="CHEVRON_CIRCLE_RIGHT" size="40"/>
+                            </graphic>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="190.0" top="10.0"/>
+                            </HBox.margin>
+                        </JFXButton>
+                    </children>
+                    <padding>
+                        <Insets right="100.0"/>
+                    </padding>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
