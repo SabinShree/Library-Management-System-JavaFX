@@ -4,3 +4,4 @@
 2. SQLITE.
 3. TrayNotification library.
 
+https://github.com/SabinShree/Library-Management-System-JavaFX/blob/master/layout.PNG
