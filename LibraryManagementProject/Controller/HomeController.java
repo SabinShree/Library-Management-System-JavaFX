@@ -71,9 +71,15 @@ public class HomeController {
     public void listNewMemberWindow() {
         windowLoader("../MainClass/MembersTable.fxml", "Image/HomePagButtonIcon/ListBooks.png", "Books Table", true);
     }
+
     @FXML
     public void issueBookWindow() {
         windowLoader("../MainClass/IssuedBookPage.fxml", "Image/HomePagButtonIcon/AddBooks.png", "Issued Book", true);
+    }
+
+    @FXML
+    public void loadSettingWindow() {
+        windowLoader("../MainClass/Setting.fxml", "Image/HomePagButtonIcon/Setting.png", "Setting", true);
     }
 
     @FXML
